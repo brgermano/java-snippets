@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Alunos {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = 1; //declarar e inicializar a variavel
+        double n1, n2, m;
+        
+        while(i<=5) {    
+            System.out.println("Entre com a 1a nota do " +i+" aluno: ");
+            n1 = sc.nextDouble();
+            System.out.println("Entre com a 2a nota do " +i+" aluno: ");
+            n2 = sc.nextDouble();
+            m = (n1+n2)/2;
+            System.out.println("Sua media e: "+m);
+            
+            if (m >=6) {
+                System.out.println("Aprovado");
+            } else {
+                System.out.println("Reprovado");
+            }
+            i++; //i = i+i
+        }
+    }
+}
